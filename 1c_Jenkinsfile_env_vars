@@ -3,7 +3,7 @@ pipeline {
     environment {
         
         TEST_ENV = 'dev'
-        TEST_ENV = 'prod'
+        
         
     }
     stages {
@@ -23,11 +23,13 @@ pipeline {
                 // TEST_ENV will be dev
                 sh 'echo $TEST_ENV inside CheckEnv'
             }
-        stage('CheckEnv') {
-            steps {
-                // TEST_ENV will be dev
-                sh 'echo $TEST_ENV inside CheckEnv'
-            }   
+        
+           
+                
+                
+             
         }
     }
 }
+
+
